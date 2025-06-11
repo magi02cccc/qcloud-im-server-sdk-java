@@ -39,6 +39,12 @@ public class AfterSendGroupMsgCallback implements Serializable {
     private String fromAccount;
 
     /**
+     * 消息接收者 UserID列表
+     */
+    @JsonProperty("To_Account")
+    private List<String> toAccount;
+
+    /**
      * 请求发起者 UserID，可以用来识别是否为管理员请求的
      */
     @JsonProperty("Operator_Account")
